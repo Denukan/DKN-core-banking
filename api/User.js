@@ -191,6 +191,34 @@ router.post('/register', (req, res) => {
   )
 })
 
+/**
+ * @swagger
+ * /user/verifyCoreID:
+ *  post:
+ *    summary: verify user with CoreID
+ *    tags: [Authentication]
+ *    requestBody:
+ *      required: true
+ *      content:
+ *        application/json:
+ *          schema:
+ *            type: object
+ *            properties:
+ *              CoreID:
+ *                type: string
+ *                description: pregenerated CoreID
+ *    responses:
+ *       200:
+ *        description: login successful
+ *        content:
+ *          application/json:
+ *            scheme:
+ *              status success
+ *      
+ * 
+ * 
+ */
+
 router.post("/verifyCoreID" , async (reg, res) => {
   try {
     let {userId, DknID} = req.body
