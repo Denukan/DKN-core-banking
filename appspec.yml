@@ -2,7 +2,7 @@ version: 0.1
 os: linux
 files: 
   - source: /
-    destination: /home/ec-2-user/DenukanCBA
+    destination: /home/ec2-user/DenukanCBA
 hooks:
   Application:
     - location: scripts/application_stop.sh
